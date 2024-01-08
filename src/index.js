@@ -15,3 +15,13 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('./sw.js')
+    .then((registration) => {
+      console.log("serviceWorker register")
+    })
+  .catch((err) => { 
+    console.log("serviceWorker not registered:",err.message)
+  })
+}
