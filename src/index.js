@@ -18,6 +18,7 @@ reportWebVitals();
 
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register('/todelete/sw.js')
+  // navigator.serviceWorker.register('/todelete/sw.js')
     .then((registration) => {
       console.log("serviceWorker register")
     })
