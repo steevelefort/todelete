@@ -17,7 +17,7 @@ root.render(
 reportWebVitals();
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('./sw.js')
+  navigator.serviceWorker.register('/todelete/sw.js')
     .then((registration) => {
       console.log("serviceWorker register")
     })
